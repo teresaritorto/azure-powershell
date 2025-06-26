@@ -510,6 +510,14 @@ namespace Microsoft.Azure.Commands.TestFx
                     Console.WriteLine($"##[warning]WARNING : Test {testName} completed in {watch.ElapsedMilliseconds}ms");
                 }
 
+                if(powershell.Streams.Warning.Count > 0)
+                {
+                    foreach (var warning in powershell.Streams.Warning)
+                    {
+                        Console.WriteLine($"##[warning]WARNING : {warning.Message}");
+                    }
+                }
+
                 if (powershell.Streams.Error.Count > 0)
                 {
                     throw new RuntimeException($"Test failed due to a non-empty error stream. First error: {PowerShellExtensions.FormatErrorRecord(powershell.Streams.Error[0])}{(powershell.Streams.Error.Count > 0 ? "Check the error stream in the test log for additional errors." : "")}");
