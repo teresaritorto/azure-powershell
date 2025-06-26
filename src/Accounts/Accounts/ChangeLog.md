@@ -19,6 +19,7 @@
 -->
 
 ## Upcoming Release
+# Added Server-Side Pagination Support for `Invoke-AzRestMethod` command via `-FollowNextLink` parameter.
 
 ## Version 5.1.1
 * Updated the date in the message about multi-factor authentication (MFA). For more details, see https://go.microsoft.com/fwlink/?linkid=2276971
