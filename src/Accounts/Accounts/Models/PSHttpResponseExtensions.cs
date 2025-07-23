@@ -11,10 +11,8 @@ namespace Microsoft.Azure.Commands.Profile.Models
 {
     public static class PSHttpResponseExtensions
     {
-
         public const string DefaultNextLinkName = "nextLink";
         public const string DefaultPageableItemName = "value";
-
         private const int MaxPageSize = int.MaxValue;
         private const int MaxRetryAttempts = 3;
         private const int DefaultRetryDelayMilliseconds = 3000;
