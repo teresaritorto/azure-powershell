@@ -18,9 +18,8 @@ namespace Microsoft.Azure.Commands.Profile.Models
         private const int DefaultRetryDelayMilliseconds = 3000;
 
         /// <summary>
-        /// Given an AzureOperationResponse with a paginated nextLink, fetch 
-        /// all data async until maxLimit by following the nextLink. 
-        /// Aggregate responses as value children to single PSHttpResponse.
+        /// Fetch all data from a paginated AzureOperationResponse by following each 
+        /// nextLink until reaching the max limit, and combine the results into one PSHttpResponse.
         /// </summary>
         public static async Task<PSHttpResponse> FollowNextLinkAsync(
             this AzureOperationResponse<string> response,

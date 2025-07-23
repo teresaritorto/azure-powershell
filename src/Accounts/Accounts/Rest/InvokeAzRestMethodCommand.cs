@@ -454,6 +454,7 @@ namespace Microsoft.Azure.Commands.Profile.Rest
 
             return response;
         }
+
                
         private IAzureRestClient InitializeServiceClient()
         {
@@ -663,5 +664,8 @@ namespace Microsoft.Azure.Commands.Profile.Rest
             }
             return sb.ToString();
         }
+
+
+
     }
 }
