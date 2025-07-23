@@ -53,7 +53,7 @@ namespace Microsoft.Azure.Commands.Profile.Models
             {
                 this.Content = response.Body;
             }
-            this.RequestUri = response.Request.RequestUri.ToString();
+            this.RequestUri = response.Request.RequestUri.ToString();            
         }        
     }
 }
