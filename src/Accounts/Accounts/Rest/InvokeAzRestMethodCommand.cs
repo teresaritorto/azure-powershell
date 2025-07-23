@@ -11,7 +11,6 @@
 // limitations under the License.
 // ----------------------------------------------------------------------------------
 
-using Azure;
 using Microsoft.Azure.Commands.Common.Authentication;
 using Microsoft.Azure.Commands.Common.Authentication.Abstractions;
 using Microsoft.Azure.Commands.Common.Exceptions;
@@ -456,7 +455,6 @@ namespace Microsoft.Azure.Commands.Profile.Rest
             return response;
         }
                
-
         private IAzureRestClient InitializeServiceClient()
         {
             IAzureRestClient serviceClient = null;
@@ -621,7 +619,6 @@ namespace Microsoft.Azure.Commands.Profile.Rest
             {
                 WriteWarning("The FollowNextLink switch is set, but the Method is not GET. Pagination will not be applied.");
             }
-
         }
 
         private const string Subscriptions = "subscriptions";
@@ -666,8 +663,5 @@ namespace Microsoft.Azure.Commands.Profile.Rest
             }
             return sb.ToString();
         }
-
-
-
     }
 }

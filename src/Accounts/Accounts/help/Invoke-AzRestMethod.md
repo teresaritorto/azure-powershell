@@ -16,7 +16,7 @@ Construct and perform HTTP request to Azure resource management endpoint only
 ```
 Invoke-AzRestMethod -Path <String> [-Method <String>] [-Payload <String>] [-AsJob] [-WaitForCompletion]
  [-PollFrom <String>] [-FinalResultFrom <String>] [-DefaultProfile <IAzureContextContainer>]
- [-WhatIf] [-Confirm] [<CommonParameters>] [=FollowNextLink]
+ [-WhatIf] [-Confirm] [<CommonParameters>] [-FollowNextLink]
  [-NextLinkName <String>] [-PageableItemName <String>] [-MaxPageSize <Int32>]]
 ```
 
@@ -25,7 +25,7 @@ Invoke-AzRestMethod -Path <String> [-Method <String>] [-Payload <String>] [-AsJo
 Invoke-AzRestMethod [-SubscriptionId <String>] [-ResourceGroupName <String>] [-ResourceProviderName <String>]
  [-ResourceType <String[]>] [-Name <String[]>] -ApiVersion <String> [-Method <String>] [-Payload <String>]
  [-AsJob] [-WaitForCompletion] [-PollFrom <String>] [-FinalResultFrom <String>]
- [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [=FollowNextLink]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [-FollowNextLink]
  [-NextLinkName <String>] [-PageableItemName <String>] [-MaxPageSize <Int32>]]
  [<CommonParameters>]
 ```
@@ -34,7 +34,7 @@ Invoke-AzRestMethod [-SubscriptionId <String>] [-ResourceGroupName <String>] [-R
 ```
 Invoke-AzRestMethod [-Uri] <Uri> [-ResourceId <Uri>] [-Method <String>] [-Payload <String>] [-AsJob]
  [-WaitForCompletion] [-PollFrom <String>] [-FinalResultFrom <String>]
- [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [=FollowNextLink]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [-FollowNextLink]
  [-NextLinkName <String>] [-PageableItemName <String>] [-MaxPageSize <Int32>]]
  [<CommonParameters>]
 ```

@@ -11,9 +11,17 @@
 // limitations under the License.
 // ----------------------------------------------------------------------------------
 
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Net;
+using System.Net.Http;
 using System.Net.Http.Headers;
 using Microsoft.Rest.Azure;
 using Microsoft.WindowsAzure.Commands.Common.Attributes;
+using Newtonsoft.Json;
+using Microsoft.Rest;
+using System.Linq;
 using Newtonsoft.Json.Linq;
 
 namespace Microsoft.Azure.Commands.Profile.Models
@@ -53,7 +61,7 @@ namespace Microsoft.Azure.Commands.Profile.Models
             {
                 this.Content = response.Body;
             }
-            this.RequestUri = response.Request.RequestUri.ToString();            
+            this.RequestUri = response.Request.RequestUri.ToString();
         }        
     }
 }

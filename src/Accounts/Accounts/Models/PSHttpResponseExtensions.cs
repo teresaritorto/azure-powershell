@@ -11,11 +11,13 @@ namespace Microsoft.Azure.Commands.Profile.Models
 {
     public static class PSHttpResponseExtensions
     {
-        const int MaxPageSize = int.MaxValue;
-        const int MaxRetryAttempts = 3;
-        const int DefaultRetryDelayMilliseconds = 3000;
+
         public const string DefaultNextLinkName = "nextLink";
         public const string DefaultPageableItemName = "value";
+
+        private const int MaxPageSize = int.MaxValue;
+        private const int MaxRetryAttempts = 3;
+        private const int DefaultRetryDelayMilliseconds = 3000;
 
         /// <summary>
         /// Given an AzureOperationResponse with a paginated nextLink, fetch 
